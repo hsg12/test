@@ -1,0 +1,9 @@
+<h1 class="app-h1">Home</h1>
+
+<?php foreach ($customers as $customer) : ?>
+    <div>
+        <h3><?= $customer->name; ?></h3>
+        <p><?= $customer->email; ?></p>
+        <hr>
+    </div>
+<?php endforeach; ?>

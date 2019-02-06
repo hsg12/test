@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="test">
+        <meta name="author" content="Hayk">
+
+        <title><?= $this->getHeadTitle() ?></title>
+
+        <link href="/img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+        <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/j-confirm-action.css">
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" >
+      
+        <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="/js/popper.min.js"></script>
+        <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/js/app-script.js"></script>
+        <script type="text/javascript" src="/js/j-confirm-action.js"></script>
+       
+    </head>
+    <body>
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="/">Home</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/customers">Manage Customers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/customers/add">Add Customer</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="container">
+            <?php $this->template() ?>
+        </div>    
+
+        <footer class="footer">
+            <hr>
+            <div class="container">
+                <div class="row footer-inner">
+                    <strong>Footer</strong>
+                </div>
+            </div>    
+        </footer>
+
+    </body>
+</html>
